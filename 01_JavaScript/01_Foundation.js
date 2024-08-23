@@ -73,7 +73,7 @@ for (const element of array) {
 //? write a code that prints largest number in the array.
 let max = -1;
 array.forEach(element => {
-    if(element > max) max = element;
+    if (element > max) max = element;
 });
 // console.log(max)
 
@@ -89,11 +89,11 @@ let people = [
         name: "Jane",
         age: 30,
         gender: "female"
-    },{
+    }, {
         name: "Harshita",
         age: 21,
         gender: "female"
-    },{
+    }, {
         name: "Hitesh",
         age: 28,
         gender: "male"
@@ -106,16 +106,16 @@ for (const element of people) {
 
 //?write a code that reverses all the elements of the array.
 
-let array2 = [ 'a' , 'b' , 'c' , 'd' , 'e']
-for(let  i = 0; i < (array2.length)/2; i++) {
+let array2 = ['a', 'b', 'c', 'd', 'e']
+for (let i = 0; i < (array2.length) / 2; i++) {
     temp = array2[i];
-    array2[i] = array2[array2.length-1-i]
-    array2[array2.length-1-i] = temp;
+    array2[i] = array2[array2.length - 1 - i]
+    array2[array2.length - 1 - i] = temp;
 };
 // console.log(array2)
 
 //todo Arrays:
- names = ["harshita", "rajoria", "hkirat", "hitesh"];
+names = ["harshita", "rajoria", "hkirat", "hitesh"];
 // console.log(names[0])
 // console.log(" ")
 for (let i = 0; i < names.length; i++) {
@@ -156,10 +156,10 @@ const arrayObject = [
         name: "Bob",
         age: 35
     }
-    ,{
+    , {
         name: "Alice",
         age: 20
-    },{
+    }, {
         name: "Tom",
         age: 28
     }
@@ -177,23 +177,61 @@ for (const element of arrayObject) {
 }
 
 //todo functions: read by only when function called, otherwise skipped
-//? write a function which sum two numbers
-//? write a function to display sum in pretty format
-//? write a function which sum two numbers and print in passive tense.
 
-function add(a ,b ){
-    console.log(a+b);
+function add(a, b) {
+    console.log(a + b);
 }
 // add(12,56);
-function minus(a,b){
-    if(a>b) return a-b
-    else return  b-a;
+function minus(a, b) {
+    if (a > b) return a - b
+    else return b - a;
 }
 // console.log(minus(12,56));
-const value = minus(12,65)
+const value = minus(12, 65)
 // console.log(value)
 
-function print(prompt){
+function print(prompt) {
     return prompt
 }
 // console.log(print("prompt is nothing"));
+
+//*callback functions: calling function inside a function
+//? write a function which sum two numbers
+function sum(num1, num2) {
+    let result = num1 + num2;
+    return result;
+}
+
+//? write a function to display sum in pretty format
+function displayResult(data) {
+    console.log(" result of the sum is : " + data);
+}
+
+//? write a function which sum two numbers and print in passive tense. 
+function displayResultPassive(data) {
+    console.log("sum's result is " + data);
+}
+
+//?you are only allowed to call one function after this!!
+//*Approach one: two methods called
+let sumResult = sum(10, 20);
+displayResult(sumResult);
+displayResultPassive(sumResult);
+
+//*Approach two : 
+function sum(num1, num2) {
+    let result = num1 + num2;
+    displayResult(result);
+}
+sum(1,2)
+
+//*Approach three without any change any logic : perfect approach with one method
+//passed function as parameter  in the following function:
+function sum(num1, num2, fnToCall) {
+    let result = num1 + num2;
+    fnToCall(result);
+}
+let ans1 = sum(1, 2, displayResult);
+let ans2 = sum(1, 2, displayResultPassive);
+
+//* arrow functions: concise syntax for functions
