@@ -195,6 +195,28 @@ function print(prompt) {
 }
 // console.log(print("prompt is nothing"));
 
+
+function sum(a, b) {
+    return a + b;
+}
+
+function minus(a, b) {
+    return a - b;
+}
+
+function calculateArithmetic(a, b, type) {
+    if (type == "sum") {
+        const value = sum(a, b);
+        return value;
+    }
+    if (type == "minus") {
+        const value = minus(a, b);
+        return value;
+    }
+}
+calculateArithmetic(1, 2, sum);
+
+
 //*callback functions: calling function inside a function
 //? write a function which sum two numbers
 function sum(num1, num2) {
@@ -223,15 +245,46 @@ function sum(num1, num2) {
     let result = num1 + num2;
     displayResult(result);
 }
-sum(1,2)
+sum(1, 2)
 
 //*Approach three without any change any logic : perfect approach with one method
-//passed function as parameter  in the following function:
-function sum(num1, num2, fnToCall) {
+//passed function as  a parameter  in the function:
+function sum(num1, num2, fn) {
     let result = num1 + num2;
-    fnToCall(result);
+    fn(result);
 }
 let ans1 = sum(1, 2, displayResult);
 let ans2 = sum(1, 2, displayResultPassive);
 
-//* arrow functions: concise syntax for functions
+
+
+function calculateArithmetic(a, b, arithmeticFinalFunction) {
+    return arithmeticFinalFunction(a, b)
+}
+function sum(a, b) {
+    return a + b;
+}
+function minus(a, b) {
+    return a - b;
+}
+
+const value1 = calculateArithmetic(1, 2, sum); //3
+const value2 = calculateArithmetic(1, 2, minus); // -1
+console.log(value);
+
+
+//! setTimeOut() : function take a function as argument
+function print(value){
+    console.log(value);
+}
+function greet(){
+    console.log("Hello")
+}
+setTimeout(greet , 1000);
+setTimeout(()=>{
+    console.log("Harshita");
+},  1000) //will call print function after 1000 milliseconds/ 1 seconds.
+
+//! setinterval()
+setInterval(() => { console.log("Rajoria"); }, 2000);  //will print "rajoria" after 2000 milliseconds.
+
