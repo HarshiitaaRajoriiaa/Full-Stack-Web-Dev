@@ -41,5 +41,7 @@ function isAnagram(str1, str2) {
 }
 
 ```
+
+
 ### WEEK 1.2
 
