@@ -1,6 +1,4 @@
 //TODO : DataTypes, Arrays, Loops, Objects, Functions
-
-
 //* simple primitives:
 //? write a code to greet a user given their first name and last name.
 let firstName = "harshita"
@@ -19,6 +17,7 @@ for (let i = 0; i <= 1000; i++) {
     count++;
 }
 // console.log(`${count}`)
+// console.log(count)
 
 //todo let, var = original way to define a variable, const
 //*can be redeclare and rewrite: using var isn't a good practice because it can be re-declared by other programmers when they are working together on same project which causes problems redundancy problems. 
@@ -55,16 +54,20 @@ for (let i = 0; i <= 100; i++) {
 }
 
 
-//* complex primitives:
+
+
+
+//! COMPLEX PRIMITIVES:
 //? write a code that prints even number in the array.
 let array = [1, 2, 3, 4, 5]
 
-//for(){}
+// for(i = ; i < ; i++){
+// }
 
-//array.forEach(()=>{})
-array.forEach(element => {
-    // if(element%2==0) console.log(element)
-});
+//*array.forEach(()=>{})
+array.forEach(e => {
+    if(e%2==0) console.log(e)
+})
 
 //forOf(){}
 for (const element of array) {
@@ -72,13 +75,12 @@ for (const element of array) {
 }
 //? write a code that prints largest number in the array.
 let max = -1;
-array.forEach(element => {
-    if (element > max) max = element;
+array.forEach(i => {
+    if (i > max) max = i;
 });
 // console.log(max)
 
 //?write a code that prints all the male people's first name given a complex object.
-
 let people = [
     {
         name: "John",
@@ -226,12 +228,12 @@ function sum(num1, num2) {
 
 //? write a function to display sum in pretty format
 function displayResult(data) {
-    console.log(" result of the sum is : " + data);
+    // console.log(" result of the sum is : " + data);
 }
 
 //? write a function which sum two numbers and print in passive tense. 
 function displayResultPassive(data) {
-    console.log("sum's result is " + data);
+    // console.log("sum's result is " + data);
 }
 
 //?you are only allowed to call one function after this!!
@@ -270,21 +272,21 @@ function minus(a, b) {
 
 const value1 = calculateArithmetic(1, 2, sum); //3
 const value2 = calculateArithmetic(1, 2, minus); // -1
-console.log(value);
+// console.log(value);
 
 
 //! setTimeOut() : function take a function as argument
 function print(value){
-    console.log(value);
+    // console.log(value);
 }
 function greet(){
-    console.log("Hello")
+    // console.log("Hello")
 }
 setTimeout(greet , 1000);
 setTimeout(()=>{
-    console.log("Harshita");
+    // console.log("Harshita");
 },  1000) //will call print function after 1000 milliseconds/ 1 seconds.
 
 //! setinterval()
-setInterval(() => { console.log("Rajoria"); }, 2000);  //will print "rajoria" after 2000 milliseconds.
+// setInterval(() => { console.log("Rajoria"); }, 2000);  //will print "rajoria" after 2000 milliseconds.
 

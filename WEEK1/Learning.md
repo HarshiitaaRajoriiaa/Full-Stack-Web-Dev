@@ -8,3 +8,4 @@ console.log(date.toLocaleTime());
 ``` javascript
 process.stdout.write(`/r________`;)
 ```
+3. inject variable = ${name_Variable}
