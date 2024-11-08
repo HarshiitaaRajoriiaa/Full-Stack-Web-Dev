@@ -18,5 +18,20 @@
 15. <br> - space
 16. <hr> - line
 
-
+# CSS:
+1. <h1 style="color: ; background:  ; "></h1>
+## Attributes - 
+1. color 
+2. background
+3. border = radius
+4. border = dotted , solid
+5. padding - margin , padding-left/right
+6. box-shadow = _right and left px _up and down px _close and far from the object px  color
+7. font-size 
+8. float-right = right most of parent div
+9. flex = next to each other same x axis 
+10. justify-content: flex-start / flex-end / flex-around / flex-evenly / flex-between  - equally / flex-center
+11. absolute positioning 
+12. height:_px , width: _px
+13. font-weight
 
