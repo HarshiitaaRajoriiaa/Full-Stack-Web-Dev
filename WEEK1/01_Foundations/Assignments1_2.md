@@ -1,5 +1,5 @@
-## ASSIGNMENTS:
-### WEEK 1.1 
+## ASSIGNMENTS: questions inside the lecture video
+### WEEK 1.2 
 1. Create a counter in js count down from 30 to 0:
 ```javascript
 function counter(value){
@@ -11,20 +11,26 @@ function counter(value){
 }
 console.log(counter(30))
 ```
+
+
+
 2. Calculate the time it takes between a `setTimeOut()` call and the inner function actually running:
 ```javascript
 let time1 = new Date();
-console.log(time1.toLocaleTimeString())
+console.log(time1.toLocaleTimeString())  //print time 
 function timePrint (){
     let time2 = new Date();
     console.log(time2.toLocaleTimeString())
-
     // Time difference in milliseconds
     let timeDifference = time2 - time1; 
     console.log(`Time difference: ${timeDifference} milliseconds`);
 }
 setTimeout(timePrint , 5000)
 ```
+
+
+
+
 3. Create a terminal clock:
 ```javascript
 setInterval(() => {
@@ -33,33 +39,7 @@ setInterval(() => {
 }, 1000);
 
 ```
-4. Write a function `isAnagram` which takes 2 parameters and returns true/false if those are anagrams or not.
-```javascript
- // What's Anagram? - A word, phrase, or name formed by rearranging the letters of another, such as spar, formed from rasp.
-function isAnagram(str1, str2) {
-    
-}
 
-
-
-```
-
-5. Write a function `findLargestElement` that takes an array of numbers and returns the largest element.
-
- Example:
-  - Input: [3, 7, 2, 9, 1] ,  Output: 9
-
-``` javascript
-
-function findLargestElement(numbers) {
-    let max =numbers[0];
-    for (const i  of numbers) {
-        if(i>max) max = i;
-        }
-    return max;
-}
-```
-6. 
 
 
 
