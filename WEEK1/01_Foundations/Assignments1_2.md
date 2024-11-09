@@ -12,8 +12,6 @@ function counter(value){
 console.log(counter(30))
 ```
 
-
-
 2. Calculate the time it takes between a `setTimeOut()` call and the inner function actually running:
 ```javascript
 let time1 = new Date();

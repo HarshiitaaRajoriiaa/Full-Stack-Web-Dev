@@ -1,4 +1,6 @@
-setInterval(() => {
-    let time = new Date();
-    process.stdout.write(`\r${time.toLocaleTimeString()}`);
-}, 1000);
+const sampleObject = {
+    key1: "value1",
+    key2: "value2",
+    key3: "value3",
+  };
+console.log(Object.assign(sampleObject, { newProperty: "newValue" }));

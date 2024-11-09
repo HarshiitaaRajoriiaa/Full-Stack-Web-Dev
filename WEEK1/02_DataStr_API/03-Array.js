@@ -3,9 +3,9 @@
 // Array:   push(), pop(), shift(), unshift(), splice(), slice(),
 // concat(), forEach(), map(), filter(), reduce(), find(), sort()
 
-// Run each function to see the output, play and learn by doing.
 
-// push()
+
+//? push()  : push element in array at the end
 function pushExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -14,7 +14,7 @@ function pushExample(arr, element) {
 }
 pushExample([1, 2, 3], 4);
 
-// pop()
+// ?pop():  pop element from array at the end
 function popExample(arr) {
   console.log("Original Array:", arr);
 
@@ -23,7 +23,9 @@ function popExample(arr) {
 }
 popExample([1, 2, 3]);
 
-// shift()
+
+
+//? shift() : remove element from array at the beginning
 function shiftExample(arr) {
   console.log("Original Array:", arr);
 
@@ -32,7 +34,7 @@ function shiftExample(arr) {
 }
 shiftExample([1, 2, 3]);
 
-// unshift()
+//? unshift() : add element to array at the beginning
 function unshiftExample(arr, element) {
   console.log("Original Array:", arr);
 
@@ -41,7 +43,7 @@ function unshiftExample(arr, element) {
 }
 unshiftExample([1, 2, 3], 0);
 
-// concat()
+//? concat() : combine two or more arrays
 function concatExample(arr1, arr2) {
   console.log("Original Arrays:", arr1, arr2);
 
@@ -50,43 +52,46 @@ function concatExample(arr1, arr2) {
 }
 concatExample([1, 2, 3], [4, 5, 6]);
 
-// forEach()
+//? forEach() : loop through array and execute a function for each element
 function forEachExample(arr) {
   console.log("Original Array:", arr);
 
-  arr.forEach(function(item, index) {
+  arr.forEach(function (item, index) {
     console.log(item, index);
   });
 }
 forEachExample([1, 2, 3]);
 
-// map()
+//? map() : create a new array with the results of calling a provided function on every element in the calling array
+// array. map() returns the new array, and the original array is unchanged.
 function mapExample(arr) {
   console.log("Original Array:", arr);
-
-  let newArr = arr.map(function(item) {
-    return item * 2;
-  });
+  let newArr = arr.map((i) => {
+    return i * 2;
+  }
+  );
   console.log("After map:", newArr);
 }
 mapExample([1, 2, 3]);
 
-// filter()
+//? filter() : create a new array with all elements that pass the  filter test implemented by the provided function
+//Returns a new array containing all elements that satisfy the provided testing function.
 function filterExample(arr) {
   console.log("Original Array:", arr);
 
-  let newArr = arr.filter(function(item) {
+  let newArr = arr.filter(function (item) {
     return item > 3;
   });
   console.log("After filter:", newArr);
 }
 filterExample([1, 2, 3, 4, 5]);
 
-// find()
+//? find() : return the value of the first element in the array that satisfies the provided testing function
+//Returns the first element in the array that satisfies the provided testing function.
 function findExample(arr) {
   console.log("Original Array:", arr);
 
-  let found = arr.find(function(item) {
+  let found = arr.find(function (item) {
     return item > 3;
   });
   console.log("After find:", found);
@@ -96,10 +101,9 @@ findExample([1, 2, 3, 4, 5]);
 // sort()
 function sortExample(arr) {
   console.log("Original Array:", arr);
-
-  arr.sort(function(a, b) {
+  arr.sort(function (a, b) {
     return a - b;
-  });
+  })
   console.log("After sort:", arr);
 }
 sortExample([5, 2, 3, 4, 1]);

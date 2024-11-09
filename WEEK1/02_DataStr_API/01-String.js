@@ -1,9 +1,9 @@
-// String handbook
+// *String handbook
 
 // String: length, indexOf(), lastIndexOf(), slice(), substring(), replace(),
 // split(), trim(), toUpperCase(), toLowerCase(), etc.
 
-// Run each function to see the output, play and learn by doing.
+
 
 // Length
 function getLength(str) {
@@ -26,40 +26,42 @@ function findLastIndexOf(str, target) {
 }
 findLastIndexOf("Hello World World", "World");
 
-// slice
+// ?slice : end excluded
 function getSlice(str, start, end) {
   console.log("Original String:", str);
   console.log("After slice:", str.slice(start, end));
 }
 getSlice("Hello World", 0, 5);
 
-// substring
-function getSubstring(str, start, end) {
+// ?substring
+function getSubstring(str, start, length) {
   console.log("Original String:", str);
-  console.log("After substring:", str.substring(start, end));
+  console.log("After substring:", str.substring(start, length));
 }
 getSubstring("Hello World", 0, 5);
 
-// replace
+//? replace
 function replaceString(str, target, replacement) {
   console.log("Original String:", str);
   console.log("After replace:", str.replace(target, replacement));
 }
 replaceString("Hello World", "World", "JavaScript");
 
-// split
+// ?split : split string with 
 function splitString(str, separator) {
   console.log("Original String:", str);
   console.log("After split:", str.split(separator));
 }
-splitString("Hello World", " ");
+splitString("Hello World", " W");
+//   Original String: Hello World
+// After split: [ 'Hello', 'orld' ]
 
-// trim
+//? trim : trim out the extra spaces from starting
 function trimString(str) {
   console.log("Original String:", str);
   console.log("After trim:", str.trim());
 }
-trimString(" Hello World ");
+trimString(" Hello World     ");
 
 // toUpperCase
 function toUpper(str) {
