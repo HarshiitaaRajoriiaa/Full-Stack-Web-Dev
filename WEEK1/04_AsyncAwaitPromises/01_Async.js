@@ -21,8 +21,10 @@ const read = require('fs'); // just a syntax to use the file system module
 read.readFile("exampletext.txt", "utf8", (err, data) => {
     if(err) throw err;
     console.log(data);
+    console.log("This is a asynchronous function call");
 })
-console.log("This is a synchronous function call"); // this will be executed before the readFile function call completes
+console.log("This is a synchronous "); // this will be executed before the readFile function call completes
+
 
 
 //* asynchronous function with execute independently and other function will execute in the mean time . after when the async function completes, it will wait in callback queue for thread to become free and then execute.
