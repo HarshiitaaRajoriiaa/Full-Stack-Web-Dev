@@ -68,4 +68,13 @@ print(data){
 fs.readFile('example.txt', 'utf8').then(print).catch((err)=>{
     console.error(err);
 })
+
+
+// Promise chaining: 
+promisedFunction(2000).then(()=>{
+    return promisedFunction(3000).then(()=>{
+        //if want to chain multiple promises, you can return the next promise in then block.
+    })
+})
+})
  ```
