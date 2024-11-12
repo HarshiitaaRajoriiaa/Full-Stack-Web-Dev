@@ -5,7 +5,7 @@
 
 
 
-// Length
+//? Length
 function getLength(str) {
   console.log("Original String:", str);
   console.log("Length:", str.length);
@@ -19,7 +19,7 @@ function findIndexOf(str, target) {
 }
 findIndexOf("Hello World", "World");
 
-// lastIndexOf
+//? lastIndexOf
 function findLastIndexOf(str, target) {
   console.log("Original String:", str);
   console.log("Index:", str.lastIndexOf(target));
@@ -63,14 +63,14 @@ function trimString(str) {
 }
 trimString(" Hello World     ");
 
-// toUpperCase
+//? toUpperCase
 function toUpper(str) {
   console.log("Original String:", str);
   console.log("After toUpperCase:", str.toUpperCase());
 }
 toUpper("Hello World");
 
-// toLowerCase
+//? toLowerCase
 function toLower(str) {
   console.log("Original String:", str);
   console.log("After toLowerCase:", str.toLowerCase());
