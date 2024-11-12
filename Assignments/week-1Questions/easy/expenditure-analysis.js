@@ -13,8 +13,16 @@
   Output - [{ category: 'Food', totalSpent: 10 }] // Can have multiple categories, only one example is mentioned here
 */
 
+
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  const categories = [...new set(transactions.map(transaction => transaction.category))];
+  for (const entry of transactions) {
+    for(let i=1;i<categories.length; i++  ) {
+      if(entry.category == categories[i]) {
+        categories[i].totalSpent += entry.price;
+      }
+    }
+  }
 }
 
 module.exports = calculateTotalSpentByCategory;
