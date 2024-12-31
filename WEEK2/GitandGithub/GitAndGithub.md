@@ -131,3 +131,15 @@ PS C:\Users\dell\OneDrive\Desktop\WebDev\Full-Stack-Web-Dev\WEEK2\GitandGithub> 
   WebdevWithHarkirat
 * learning
 ```
+the work you did in learning branch won't reflect on other branches.
+
+* make a new branch and swift head to it.
+  ``` terminal
+  git switch -c dark-mode
+  git switch -c light-mode
+  git switch -c new-branch
+  ```
+* checkout existing branch
+  ``` terminal
+  git checkout branch-name
+  ```
