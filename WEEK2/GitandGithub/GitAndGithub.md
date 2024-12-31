@@ -131,3 +131,5 @@ PS C:\Users\dell\OneDrive\Desktop\WebDev\Full-Stack-Web-Dev\WEEK2\GitandGithub> 
   WebdevWithHarkirat
 * learning
 ```
+* git merge
+* git merge --abort
