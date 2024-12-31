@@ -18,3 +18,13 @@ will watch it from youtube.
 2. git status
    On branch main
    Your branch is up to date with 'origin/main'.
+3. git branch -m newName
+   change branch name to new name
+    main changed to   * WebdevWithHarkirat
+4. steps or stages-
+   * git init -- initialize a particular folder within bunch of folders
+   * git add <file1> <file2> -- add particular/selected files to track within folder among all the files.
+   * git add . -- add all files
+   * git rm --cached <file1> -- remove files from staged files
+   * git commit "commit message" -- commit the changes 
+   * 
