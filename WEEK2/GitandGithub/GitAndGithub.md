@@ -133,3 +133,5 @@ PS C:\Users\dell\OneDrive\Desktop\WebDev\Full-Stack-Web-Dev\WEEK2\GitandGithub> 
 ```
 * git merge
 * git merge --abort
+* git diff
+* git stash
