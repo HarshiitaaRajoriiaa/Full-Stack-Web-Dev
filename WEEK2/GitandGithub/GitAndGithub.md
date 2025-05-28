@@ -133,5 +133,5 @@ PS C:\Users\dell\OneDrive\Desktop\WebDev\Full-Stack-Web-Dev\WEEK2\GitandGithub> 
 ```
 * git merge
 * git merge --abort
-* git diff
-* git stash
+* git diff -- differences between branches, stages, etc.
+* git stash -- saves changes n current branch and can switch branches without merge issues and commit issues.
