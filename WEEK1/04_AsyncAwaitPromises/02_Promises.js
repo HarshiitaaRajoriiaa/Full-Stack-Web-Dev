@@ -18,7 +18,7 @@ promise.then(()=>{
 
 
 //* Function without Promise
-const read = require('fs');
+const read = require('fs'); //file content
 function readFile( fn){
     read.readFile("exampletext.txt", "utf8", (err, data) => {
         if(err) throw err;
@@ -53,6 +53,8 @@ const p = new Promise((resolve)=>{
 
 });
 console.log(p); // Promise { <pending> } 
+
+
 //* threes states of promise: pending,  resolve, rejected
 const p1 = new Promise((resolve)=>{
 

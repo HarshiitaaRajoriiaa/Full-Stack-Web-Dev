@@ -1,14 +1,16 @@
 ## Terminal is nothing but another interface for you to work on your computer like any OS do. 
 like open file , rename a file , manipulate data of a file , 
+
 ### 1. pwd -  present working directory 
 1. pwd - path to the current working directory.
+
 ### 2. cd - changes  directory
 1 cd name_0f_directory - change directory , move on directory to another , within the current working 
 directory.
-2. cd.. - change directory , change path to the directory outside of the current working directory
+1. cd.. - change directory , change path to the directory outside of the current working directory
 closest parent of the current working directory.
-3. cd - +tab let you auto complete the name of the directory. If you are accessing the directory in right order.
-4. cd ../.. - take you out from the current working directory by two steps.
+1. cd - +tab let you auto complete the name of the directory. If you are accessing the directory in right order.
+2. cd ../.. - take you out from the current working directory by two steps.
    
 ### 3. ls - list down directories
 1. ls - list down of  the directory within the current working directory.

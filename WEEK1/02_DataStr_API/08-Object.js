@@ -15,7 +15,7 @@ function objectMethods(obj) {
   console.log("After hasOwnProperty():", hasProp); //check if the object has a specific property or not
 
   let newObj = Object.assign({}, obj, { newProperty: "newValue" }); // create a new object with the original object and a new property
-  console.log("After Object.assign():", newObj); //* important method
+  console.log("After Object.assign():", newObj); //! important method
 }
 
 // Example Usage for Object Methods

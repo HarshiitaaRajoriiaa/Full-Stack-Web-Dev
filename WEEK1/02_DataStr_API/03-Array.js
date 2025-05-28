@@ -87,7 +87,7 @@ function filterExample(arr) {
 filterExample([1, 2, 3, 4, 5]);
 
 //? find() : return the value of the first element in the array that satisfies the provided testing function
-//Returns the first element in the array that satisfies the provided testing function.
+//*Returns the first element in the array that satisfies the provided testing function.
 function findExample(arr) {
   console.log("Original Array:", arr);
 
@@ -98,7 +98,7 @@ function findExample(arr) {
 }
 findExample([1, 2, 3, 4, 5]);
 
-// sort()
+//? sort()
 function sortExample(arr) {
   console.log("Original Array:", arr);
   arr.sort(function (a, b) {

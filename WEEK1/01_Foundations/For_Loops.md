@@ -42,7 +42,8 @@ array.forEach(e => {
 
 //forOf(){}
 for (const element of array) {
-    // if(element%2==0) console.log(element)
+    if(element%2==0) 
+    // console.log(element)
 }
 //? write a code that prints largest number in the array.
 let max = -1;
@@ -103,8 +104,8 @@ const firstOject = {
 }
 
 // console.log(firstOject.gender)
-
-//*object with functions or properties
+ 
+//* object with functions or properties
 const person = {
     firstName: "John",
     lastName: "Doe",
@@ -129,7 +130,8 @@ const arrayObject = [
         name: "Bob",
         age: 35
     }
-    , {
+    , 
+    {
         name: "Alice",
         age: 20
     }, {
@@ -137,6 +139,7 @@ const arrayObject = [
         age: 28
     }
 ]
+
 // console.log(arrayObject[0].name)
 for (const i in arrayObject) { 
     // console.log(arrayObject[i]) //print whole object pair

@@ -20,7 +20,6 @@ function print(animal) {
 
 
 print(dog); // Output: Name: dog, Age: 3, Breed: Golden Retriever
-
 print(cat); // Output: Name: cat, Age: 2, Breed: Siamese
 
 

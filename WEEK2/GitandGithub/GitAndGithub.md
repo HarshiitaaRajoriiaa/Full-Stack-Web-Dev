@@ -103,7 +103,7 @@ Everything is stored as key-value pairs in the tree object. The key is the file 
 Blob Object is present in the tree object and contains the actual file content. This is the place where the file content is stored.
 ![blob object](image.png)
 
-``` terminal 
+``` terminal ****
 git show -s --pretty=raw <commit-hash>
 git ls-tree <tree-id>
 git show <blob-id>

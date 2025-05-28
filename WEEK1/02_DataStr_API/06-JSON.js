@@ -1,4 +1,5 @@
 // ? JAVASCRIPT OBJECT NOTATION (JSON)
+
 const data ={ //one kind of data structure used to import and export data from a server or a file
   "name": "John",
   "age": 30,
