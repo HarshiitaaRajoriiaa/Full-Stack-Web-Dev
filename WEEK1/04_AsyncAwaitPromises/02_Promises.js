@@ -8,7 +8,7 @@ let promise = new Promise((resolve)=>{
     resolve("promise resolved"); // promise { state: "fulfilled", value: "promise resolved"  }
 })
 promise.then(()=>{
-    console.log(promise);
+    console.log(promise)
 })
 
 //above resolve we make an asynchronous function  call and that do it's work in background and not blocking the main thread.

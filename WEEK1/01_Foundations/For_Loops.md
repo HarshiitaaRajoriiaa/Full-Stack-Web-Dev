@@ -32,7 +32,7 @@ for in
 //? write a code that prints even number in the array.
 let array = [1, 2, 3, 4, 5]
 
-// for(i = ; i < ; i++){
+// for(i = 1 ; i < ; i++){
 // }
 
 //*array.forEach(()=>{})
@@ -138,10 +138,12 @@ const arrayObject = [
     }
 ]
 // console.log(arrayObject[0].name)
-for (const i in arrayObject) {
-    // console.log(arrayObject[i])
+for (const i in arrayObject) { 
+    // console.log(arrayObject[i]) //print whole object pair
     // if(arrayObject[i].age >=25) console.log(arrayObject[i].name)
 }
+
+
 arrayObject.forEach(element => {
     // console.log(element.name)
 });

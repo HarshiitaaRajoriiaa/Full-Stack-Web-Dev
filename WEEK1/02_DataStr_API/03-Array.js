@@ -54,7 +54,7 @@ concatExample([1, 2, 3], [4, 5, 6]);
 
 //? forEach() : loop through array and execute a function for each element
 function forEachExample(arr) {
-  console.log("Original Array:", arr);
+  console.log("Original Array:", arr)
 
   arr.forEach(function (item, index) {
     console.log(item, index);
