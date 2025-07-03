@@ -1,51 +1,51 @@
-// // const express = require("express");
-// // const obj1 = express;
-// // obj1.get('/health-checkup' , (req,res)=>{
-// //     res.send("You are all set for next round")
-// // });
-// //above code simply checking the  patient one by one .
-
-
-// //! but we need pre authentications of users which called MIDDLEWARES.
-// //*1. User Authentication (login| username-password | DATABASE)
-// //*2. Ensure Input : whether user using right input to access any logic written in backend
-
-// //? let's add constraints to our route - before this logic we user need to pass kidney_id as parameter either 1 or 2, and user should send username password in headers.
-// //ugly way
-
 // const express = require("express");
-// const health = express();
-
-// health.get("/healthy-heart-checkup", (req, res) => {
-//     const id = req.query.id; //
-//     const user = req.headers.user;
-//     const password = req.headers.password;
-
-//     if (user !== 'Harshita' || password !== "Har02") {
-//         res.status(404).json({
-//             msg: "invalid username | password"
-//         });
-//         return;
-//     }
-
-//     if (id !== '1' && id !== '2') {
-//         res.status(411).json({
-//             msg: "invalid id"
-//         });
-//         return;
-//     }
-
-//     //  Only one final response
-//     res.send("✅ done with verification, your heart is healthy");
+// const obj1 = express;
+// obj1.get('/health-checkup' , (req,res)=>{
+//     res.send("You are all set for next round")
 // });
-
-// health.listen(3000, () => {
-//     console.log("Server running on http://localhost:3000");
-// });
+//above code simply checking the  patient one by one .
 
 
+//! but we need pre authentications of users which called MIDDLEWARES.
+//*1. User Authentication (login| username-password | DATABASE)
+//*2. Ensure Input : whether user using right input to access any logic written in backend
 
-//another way 
+//? let's add constraints to our route - before this logic we user need to pass kidney_id as parameter either 1 or 2, and user should send username password in headers.
+//ugly way
+
+const express = require("express");
+const health = express();
+
+health.get("/healthy-heart-checkup", (req, res) => {
+    const id = req.query.id; //
+    const user = req.headers.user;
+    const password = req.headers.password;
+
+    if (user !== 'Harshita' || password !== "Har02") {
+        res.status(404).json({
+            msg: "invalid username | password"
+        });
+        return;
+    }
+
+    if (id !== '1' && id !== '2') {
+        res.status(411).json({
+            msg: "invalid id"
+        });
+        return;
+    }
+
+    //  Only one final response
+    res.send("✅ done with verification, your heart is healthy");
+});
+
+health.listen(3000, () => {
+    console.log("Server running on http://localhost:3000");
+});
+
+
+
+// another way 
 const express = require("express");
 const usernameValidation = (username, password) => {
     return username === 'Harshita' && password === 'Har02';
